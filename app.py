@@ -2,7 +2,7 @@ import streamlit as st
 import os
 
 # 🔑 API 키 (로컬 테스트용 / 배포 시 아래 줄 수정)
-os.environ["OPENAI_API_KEY"] = "sk-너의키"
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # 📦 LangChain imports
 from langchain_community.document_loaders import PyPDFLoader
